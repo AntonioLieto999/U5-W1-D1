@@ -15,7 +15,9 @@ public abstract class Elemento {
 
 
     public Elemento(String name, double prezzo, int calorie) {
-
+        this.name = name;
+        this.prezzo = prezzo;
+        this.calorie = calorie;
     }
 
     public String getName() {
@@ -30,17 +32,7 @@ public abstract class Elemento {
         return calorie;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public void setPrezzo(double prezzo) {
-        this.prezzo = prezzo;
-    }
-
-    public void setCalorie(int calorie) {
-        this.calorie = calorie;
-    }
 
     @Override
     public String toString() {
